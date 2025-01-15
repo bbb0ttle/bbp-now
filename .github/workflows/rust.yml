@@ -20,3 +20,9 @@ jobs:
       run: rustup target add wasm32-unknown-unknown
     - name: Build
       run: cargo build --target wasm32-unknown-unknown --release
+    - name: Use private action
+      uses: bbb0ttle/release-bbp-action@main
+      with:
+        who-to-greet: 'GitHub'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
