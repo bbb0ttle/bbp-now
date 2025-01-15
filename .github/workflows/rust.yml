@@ -43,4 +43,4 @@ jobs:
       uses: ./ # Use the local path for the checked-out action
       with:
         wasmArtifactName: wasm-file
-        wasmFileName: plugin-now.wasm
+        wasmFileName: bbp-now.wasm
