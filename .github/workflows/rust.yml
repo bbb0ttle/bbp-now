@@ -20,23 +20,24 @@ jobs:
       run: rustup target add wasm32-unknown-unknown
     - name: Build
       run: cargo build --target wasm32-unknown-unknown --release
-    - name: Upload .wasm file
-      uses: actions/upload-artifact@v4
-      with:
-        name: wasm-file
-        path: target/wasm32-unknown-unknown/release/*.wasm
-    - name: Upload plugin.json file
-      uses: actions/upload-artifact@v4
-      with:
-        name: plugin-json
-        path: plugin.json
-    - name: Checkout private action repo
+    # - name: Upload .wasm file
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: wasm-file
+    #     path: target/wasm32-unknown-unknown/release/*.wasm
+    # - name: Upload plugin.json file
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: plugin-json
+    #     path: plugin.json
+    - name: Checkout relase action repo
       uses: actions/checkout@v4
       with:
         repository: bbb0ttle/release-bbp-action
-        ref: 'v0.0.19'
+        ref: 'v0.0.20'
         token: ${{ secrets.ACTION_PAT }}
-    - name: Use private action
+        clean: false
+    - name: release plugin
       uses: ./ # Use the local path for the checked-out action
       with:
         who-to-greet: 'bbki.ng'
