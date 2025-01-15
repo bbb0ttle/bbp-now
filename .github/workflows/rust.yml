@@ -23,6 +23,6 @@ jobs:
     - name: Use private action
       uses: bbb0ttle/release-bbp-action@main
       with:
-        who-to-greet: 'GitHub'
+        who-to-greet: 'bbki.ng'
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
