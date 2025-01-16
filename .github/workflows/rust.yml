@@ -28,19 +28,8 @@ jobs:
       with:
         name: plugin-config
         path: plugin.json
-
-  release:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-    - name: Checkout release action
-      uses: actions/checkout@v4
-      with:
-        repository: bbb0ttle/release-bbp-action
-        ref: 'v0.1.1'
-        token: ${{ secrets.ACTION_PAT }}
-    - name: release plugin
-      uses: ./ # Use the local path for the checked-out action
+    - name: release
+      uses: bbbottle/release-bbp-action@v0.1.1
       with:
         wasmArtifactName: wasm-file
         wasmFileName: bbp_now.wasm
