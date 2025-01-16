@@ -29,7 +29,7 @@ jobs:
         name: plugin-config
         path: plugin.json
     - name: release
-      uses: bbbottle/release-bbp-action@v1.0.9
+      uses: bbbottle/release-bbp-action@v1.0.10
       with:
         wasmArtifactName: wasm-file
         wasmFileName: bbp_now.wasm
