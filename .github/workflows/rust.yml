@@ -37,3 +37,4 @@ jobs:
         OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
         OSS_BUCKET_NAME: ${{ secrets.OSS_BUCKET_NAME }}
         OSS_BUCKET_ENDPOINT: ${{ secrets.OSS_BUCKET_ENDPOINT }}
+        OSS_REGION: ${{ secrets.OSS_REGION }}
