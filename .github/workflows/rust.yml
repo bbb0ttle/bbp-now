@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: build
-      uses: bbbottle/release-bbp-action@build
+      uses: bbbottle/bbp-action@build
     - name: release
-      uses: bbbottle/release-bbp-action@v1.0.21
+      uses: bbbottle/bbp-action@v1.0.21
       with:
         token: ${{ secrets.VERCEL_TOKEN }}
