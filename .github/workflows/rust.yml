@@ -13,22 +13,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - name: add target
-      run: rustup target add wasm32-unknown-unknown
-    - name: Build
-      run: cargo build --target wasm32-unknown-unknown --release
-    - name: Upload .wasm file
-      uses: actions/upload-artifact@v4
-      with:
-        name: wasm-file
-        path: target/wasm32-unknown-unknown/release/*.wasm
-    - name: Upload plugin.json file
-      uses: actions/upload-artifact@v4
-      with:
-        name: plugin-config
-        path: plugin.json
+    - name: build
+      uses: bbbottle/release-bbp-action@build
     - name: release
-      uses: bbbottle/release-bbp-action@v1.0.17
+      uses: bbbottle/release-bbp-action@v1.0.18
       with:
         token: ${{ secrets.VERCEL_TOKEN }}
