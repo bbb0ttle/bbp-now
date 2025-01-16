@@ -16,6 +16,6 @@ jobs:
     - name: build
       uses: bbbottle/bbp-action@build
     - name: release
-      uses: bbbottle/bbp-action@v1.0.23
+      uses: bbbottle/bbp-action@v1.0.24
       with:
         token: ${{ secrets.VERCEL_TOKEN }}
