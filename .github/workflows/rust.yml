@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: release
-      uses: bbbottle/release-bbp-action@v1.0.14
+      uses: bbbottle/release-bbp-action@v1.0.15
