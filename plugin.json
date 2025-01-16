@@ -3,7 +3,6 @@
   "name": "now",
   "description", "a now page plugin for bbki.ng",
   "version": "0.0.1",
-  "url": "https://zjh-im-res.oss-cn-shenzhen.aliyuncs.com/plugins/now.wasm",
   "status": 0,
   "route": "近况"
 }
