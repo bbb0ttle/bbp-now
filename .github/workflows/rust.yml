@@ -14,12 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: release
-      uses: bbbottle/release-bbp-action@v1.0.13
-      with:
-        wasmArtifactName: wasm-file
-        wasmFileName: bbp_now.wasm
-        OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
-        OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
-        OSS_BUCKET_NAME: ${{ secrets.OSS_BUCKET_NAME }}
-        OSS_BUCKET_ENDPOINT: ${{ secrets.OSS_BUCKET_ENDPOINT }}
-        OSS_REGION: ${{ secrets.OSS_REGION }}
+      uses: bbbottle/release-bbp-action@v1.0.14
