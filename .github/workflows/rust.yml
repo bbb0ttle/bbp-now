@@ -29,7 +29,11 @@ jobs:
         name: plugin-config
         path: plugin.json
     - name: release
-      uses: bbbottle/release-bbp-action@v0.1.1
+      uses: bbbottle/release-bbp-action@v1.0.6
       with:
         wasmArtifactName: wasm-file
         wasmFileName: bbp_now.wasm
+        OSS_ACCESS_KEY_ID: ${{ secrets.OSS_OSS_ACCESS_KEY_ID }}
+        OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+        OSS_BUCKET_NAME: ${{ OSS_BUCKET_NAME }}
+        OSS_BUCKET_ENDPOINT: ${{ OSS_BUCKET_ENDPOINT }}
