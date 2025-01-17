@@ -16,7 +16,7 @@ jobs:
     - name: build
       uses: bbbottle/bbp-action@build
     - name: release
-      uses: bbbottle/bbp-action@v1.0.40
+      uses: bbbottle/bbp-action@v1.0.41
       with:
         token: ${{ secrets.HCP_TOKEN }}
         wasm: "bbp_now.wasm"
