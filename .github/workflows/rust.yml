@@ -16,7 +16,7 @@ jobs:
     - name: build
       uses: bbbottle/bbp-action@build
     - name: release
-      uses: bbbottle/bbp-action@v1.0.46
+      uses: bbbottle/bbp-action@v1.0.47
       with:
         hcp_client_id: ${{ secrets.HCP_CLIENT_ID }}
         hcp_client_secret: ${{ secrets.HCP_CLIENT_SECRET }}
