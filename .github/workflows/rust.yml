@@ -18,5 +18,5 @@ jobs:
     - name: release
       uses: bbbottle/bbp-action@v1.0.38
       with:
-        token: ${{ secrets.VERCEL_TOKEN }}
+        token: ${{ secrets.HCP_TOKEN }}
         wasm: "bbp_now.wasm"
