@@ -1,7 +1,7 @@
 {
   "id": 1,
   "name": "now",
-  "description", "a now page plugin for bbki.ng",
+  "description": "a now page plugin for bbki.ng",
   "version": "0.0.1",
   "status": 0,
   "route": "近况"
